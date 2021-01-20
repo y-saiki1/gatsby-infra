@@ -4,3 +4,6 @@ services:
     build: ./docker/node
     ports: 
       - 10100:3000
+    tty: true
+    volumes:
+      - ./src:/home/node/app
